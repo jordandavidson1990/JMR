@@ -1,0 +1,25 @@
+{
+  "tracks": [
+    {
+      "title": "Midnight Groove",
+      "url": "/music/midnight-groove.mp3",
+      "cover": "/images/james-portrait.jpeg",
+      "price": "$2.99",
+      "buyUrl": "#"
+    },
+    {
+      "title": "Sunset Dreams",
+      "url": "/music/sunset-dreams.mp3",
+      "cover": "/images/james-portrait.jpeg",
+      "price": "$2.99",
+      "buyUrl": "#"
+    },
+    {
+      "title": "Neon Nights",
+      "url": "/music/neon-nights.mp3",
+      "cover": "/images/james-portrait.jpeg",
+      "price": "$2.99",
+      "buyUrl": "#"
+    }
+  ]
+}
