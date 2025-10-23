@@ -3,34 +3,26 @@ import FooterEditorial from "../components/FooterEditorial";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-const YOUR_SERVICE_ID = "service_z216kar";
-const YOUR_TEMPLATE_ID = "template_6o5331p";
-const YOUR_PUBLIC_KEY = "scuS7VCp5w7XSD_z2";
-
 export default function Contact() {
   const form = useRef(null);
 
   const handleSubmit = (e) => {
+    const serviceId = process.env.NEXT_PUBLIC_YOUR_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY;
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        YOUR_SERVICE_ID,
-        YOUR_TEMPLATE_ID,
-        form.current,
-        YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          alert("Message Sent Successfully!");
-          console.log(result.text);
-          e.target.reset(); // Clear the form after success
-        },
-        (error) => {
-          alert("Failed to send message. Please try again.");
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        alert("Message Sent Successfully!");
+        console.log(result.text);
+        e.target.reset(); // Clear the form after success
+      },
+      (error) => {
+        alert("Failed to send message. Please try again.");
+        console.log(error.text);
+      }
+    );
   };
 
   return (
