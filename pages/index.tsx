@@ -2,6 +2,7 @@ import NavBarSticky from "../components/NavBarSticky";
 import HeroEditorial from "../components/HeroEditorial";
 import MusicCarousel from "../components/MusicCarousel";
 import FooterEditorial from "../components/FooterEditorial";
+import Head from "next/head";
 
 export default function Home() {
   return (
