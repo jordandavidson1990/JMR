@@ -13,21 +13,22 @@ export default function Tour() {
     <div className="bg-black text-white min-h-screen font-sans">
       <NavBarSticky />
 
-      <div className="max-w-4xl mx-auto py-16 px-4">
-        <div className="mb-12 text-center">
-          <img
-            src="/images/tour-1-bw.jpg"
-            alt=""
-            className="w-full h-auto rounded-lg shadow-lg mx-auto"
-          />
+      <section className="relative bg-black text-white h-[60vh] flex items-center justify-center overflow-hidden">
+        <img
+          src="/images/tour-1-bw.jpg"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          alt="James Michael Rodgers"
+        />
+        <div className="relative z-10 text-center max-w-2xl mx-auto">
+          <h1
+            className="text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-300"
+            style={{ lineHeight: "normal" }}
+          >
+            Upcoming Tour Dates
+          </h1>
         </div>
-        <h1
-          className="text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-300"
-          style={{ lineHeight: "normal" }}
-        >
-          Upcoming Tour Dates
-        </h1>
-
+      </section>
+      <div className="max-w-4xl mx-auto py-16 px-4">
         <div className="space-y-12">
           {months.map((month) => (
             <div
