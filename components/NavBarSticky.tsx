@@ -17,6 +17,9 @@ export default function NavBarSticky() {
             <Link href="/store">Store</Link>
           </li>
           <li>
+            <Link href="/tour">Tour</Link>
+          </li>
+          <li>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

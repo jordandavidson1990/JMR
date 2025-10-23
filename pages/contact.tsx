@@ -15,12 +15,10 @@ export default function Contact() {
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
         alert("Message Sent Successfully!");
-        console.log(result.text);
-        e.target.reset(); // Clear the form after success
+        e.target.reset();
       },
       (error) => {
         alert("Failed to send message. Please try again.");
-        console.log(error.text);
       }
     );
   };
