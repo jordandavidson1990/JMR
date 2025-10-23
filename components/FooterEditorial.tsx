@@ -28,6 +28,12 @@ export default function FooterEditorial() {
           >
             Facebook
           </a>
+          <a
+            href="https://tidal.com/artist/15693372"
+            className="text-gray-400 hover:text-red-600 mx-2 transition"
+          >
+            Tidal
+          </a>
         </div>
       </div>
     </footer>
