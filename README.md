@@ -35,3 +35,4 @@ A trendy Next.js site for James Michael Rodgers to demo and sell music.
 - `styles/`: Tailwind styles
 # JMR
 # JMR-app
+# JMR-app
