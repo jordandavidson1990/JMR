@@ -34,3 +34,4 @@ A trendy Next.js site for James Michael Rodgers to demo and sell music.
 - `public/music/`, `public/images/`: Music files and album art
 - `styles/`: Tailwind styles
 # JMR
+# JMR-app
