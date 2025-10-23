@@ -14,6 +14,13 @@ export default function Tour() {
       <NavBarSticky />
 
       <div className="max-w-4xl mx-auto py-16 px-4">
+        <div className="mb-12 text-center">
+          <img
+            src="/images/tour-1-bw.jpg"
+            alt=""
+            className="w-full h-auto rounded-lg shadow-lg mx-auto"
+          />
+        </div>
         <h1
           className="text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-300"
           style={{ lineHeight: "normal" }}
