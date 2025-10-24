@@ -48,6 +48,14 @@ export const tourDates: TourDate[] = [
     event: "Strings quartet gig",
     location: "Berlin, Germany",
     icon: "🎻",
+    link: "https://www.eventbrite.co.uk/e/an-evening-with-berlin-session-strings-tickets-1802296279689?aff=oddtdtcreator",
+  },
+  {
+    date: "November 29th",
+    event: "James Michael Rodgers + Jack Borrill",
+    location: "Glad Cafe, Glasgow, UK",
+    icon: "🎤",
+    link: "https://www.thegladcafe.co.uk/events/9c651920-8d12-45eb-a8fe-6aa305ae0dd1",
   },
   {
     date: "January 25th",

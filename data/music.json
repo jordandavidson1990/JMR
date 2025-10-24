@@ -4,21 +4,18 @@
       "title": "Closer to you",
       "url": "/music/closer-to-you.mp3",
       "cover": "/images/album-1.jpg",
-      "price": "£1.99",
       "buyUrl": "https://jamesmichaelrodgers.ffm.to/closertoyou"
     },
     {
       "title": "Deepest ocean",
       "url": "/music/deepest-ocean.mp3",
       "cover": "/images/album-4.jpg",
-      "price": "£1.99",
       "buyUrl": "#"
     },
     {
       "title": "Veins in the sun",
       "url": "/music/veins-in-the-sun.mp3",
       "cover": "/images/album-5.jpg",
-      "price": "£1.99",
       "buyUrl": "#"
     }
   ]

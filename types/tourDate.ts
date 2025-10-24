@@ -3,4 +3,5 @@ export type TourDate = {
   event: string;
   location: string;
   icon: string;
+  link?: string;
 };

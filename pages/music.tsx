@@ -2,6 +2,7 @@ import NavBarSticky from "../components/NavBarSticky";
 import FooterEditorial from "../components/FooterEditorial";
 import MusicCarousel from "../components/MusicCarousel";
 import HeroEditorial from "../components/HeroEditorial";
+import { Player } from "../components/Player";
 
 export default function Music() {
   return (
@@ -13,6 +14,8 @@ export default function Music() {
         ctaText="Album link"
         imgSrc="/images/album-7.jpg"
       />
+      {/* <Player /> */}
+
       <div className="max-w-6xl mx-auto py-12 px-4">
         <MusicCarousel />
       </div>
