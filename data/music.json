@@ -1,24 +1,24 @@
 {
   "tracks": [
     {
-      "title": "Midnight Groove",
-      "url": "/music/midnight-groove.mp3",
-      "cover": "/images/james-portrait.jpeg",
-      "price": "$2.99",
+      "title": "Closer to you",
+      "url": "/music/closer-to-you.mp3",
+      "cover": "/images/album-1.jpg",
+      "price": "£1.99",
+      "buyUrl": "https://jamesmichaelrodgers.ffm.to/closertoyou"
+    },
+    {
+      "title": "Deepest ocean",
+      "url": "/music/deepest-ocean.mp3",
+      "cover": "/images/album-4.jpg",
+      "price": "£1.99",
       "buyUrl": "#"
     },
     {
-      "title": "Sunset Dreams",
-      "url": "/music/sunset-dreams.mp3",
-      "cover": "/images/james-portrait.jpeg",
-      "price": "$2.99",
-      "buyUrl": "#"
-    },
-    {
-      "title": "Neon Nights",
-      "url": "/music/neon-nights.mp3",
-      "cover": "/images/james-portrait.jpeg",
-      "price": "$2.99",
+      "title": "Veins in the sun",
+      "url": "/music/veins-in-the-sun.mp3",
+      "cover": "/images/album-5.jpg",
+      "price": "£1.99",
       "buyUrl": "#"
     }
   ]

@@ -13,11 +13,11 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      (result) => {
+      () => {
         alert("Message Sent Successfully!");
         e.target.reset();
       },
-      (error) => {
+      () => {
         alert("Failed to send message. Please try again.");
       }
     );
