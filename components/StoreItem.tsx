@@ -7,8 +7,8 @@ export default function StoreItem({ title, cover, buyUrl }) {
         src={cover}
         alt=""
         className="w-32  rounded shadow mb-4"
-        width={100}
-        height={100}
+        width={0}
+        height={0}
       />
       <h3 className="text-lg font-bold mb-2 text-white">{title}</h3>
       <a

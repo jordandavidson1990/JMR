@@ -19,8 +19,8 @@ export default function Tour() {
           src="/images/tour-1-bw.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
           alt=""
-          width={100}
-          height={100}
+          width={0}
+          height={0}
         />
         <div className="relative z-10 text-center max-w-2xl mx-auto">
           <h1
