@@ -14,8 +14,8 @@ export default function MusicCarousel() {
               src={track.cover}
               alt={track.title}
               className="w-full h-48 object-cover rounded-t-lg"
-              width={0}
-              height={0}
+              width={300}
+              height={192}
             />
             <div className="p-4">
               <h3 className="text-lg font-bold text-white mb-2">

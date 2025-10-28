@@ -13,8 +13,8 @@ export default function Store() {
           src="/images/album-6.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
           alt=""
-          width={0}
-          height={0}
+          width={800}
+          height={600}
         />
         <div className="relative z-10 text-center max-w-2xl mx-auto">
           <h1
