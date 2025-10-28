@@ -1,3 +1,4 @@
+import Image from "next/image";
 import music from "../data/music.json";
 export default function MusicCarousel() {
   return (
@@ -9,10 +10,12 @@ export default function MusicCarousel() {
             key={idx}
             className="min-w-[300px] bg-gray-900 rounded-lg shadow flex-shrink-0"
           >
-            <img
+            <Image
               src={track.cover}
               alt={track.title}
               className="w-full h-48 object-cover rounded-t-lg"
+              width={100}
+              height={100}
             />
             <div className="p-4">
               <h3 className="text-lg font-bold text-white mb-2">

@@ -2,16 +2,19 @@ import NavBarSticky from "../components/NavBarSticky";
 import FooterEditorial from "../components/FooterEditorial";
 import StoreItem from "../components/StoreItem";
 import music from "../data/music.json";
+import Image from "next/image";
 
 export default function Store() {
   return (
     <div className="bg-black text-white min-h-screen">
       <NavBarSticky />
       <section className="relative bg-black text-white h-[60vh] flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="/images/album-6.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
-          alt="James Michael Rodgers"
+          alt=""
+          width={100}
+          height={100}
         />
         <div className="relative z-10 text-center max-w-2xl mx-auto">
           <h1

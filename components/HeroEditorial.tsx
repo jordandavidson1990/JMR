@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type HeroEditorialProps = {
   heading: string;
   subheading?: string;
@@ -15,10 +17,12 @@ export default function HeroEditorial({
 }: HeroEditorialProps) {
   return (
     <section className="relative bg-black text-white h-[60vh] flex items-center justify-center overflow-hidden">
-      <img
+      <Image
         src={imgSrc}
         className="absolute inset-0 w-full h-full object-cover opacity-40"
-        alt="James Michael Rodgers"
+        alt=""
+        width={100}
+        height={100}
       />
       <div className="relative z-10 text-center max-w-2xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">

@@ -1,7 +1,15 @@
+import Image from "next/image";
+
 export default function StoreItem({ title, cover, buyUrl }) {
   return (
     <div className="bg-gray-900 rounded-lg shadow flex flex-col items-center p-6">
-      <img src={cover} alt={title} className="w-32  rounded shadow mb-4" />
+      <Image
+        src={cover}
+        alt=""
+        className="w-32  rounded shadow mb-4"
+        width={100}
+        height={100}
+      />
       <h3 className="text-lg font-bold mb-2 text-white">{title}</h3>
       <a
         href={buyUrl}
