@@ -18,7 +18,6 @@ export default function Contact() {
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       () => {
-        alert("Message Sent Successfully!");
         setStatus({
           message: "Message Sent Successfully! We'll be in touch soon.",
           type: "success",
@@ -27,9 +26,7 @@ export default function Contact() {
         setIsLoading(false);
       },
       (err) => {
-        console.log(err);
-
-        alert("Failed to send message. Please try again.");
+        console.warn(err);
         setStatus({
           message: "Failed to send message. Please check your network.",
           type: "error",
