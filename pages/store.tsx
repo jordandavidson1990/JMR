@@ -1,7 +1,7 @@
 import NavBarSticky from "../components/NavBarSticky";
 import FooterEditorial from "../components/FooterEditorial";
 import StoreItem from "../components/StoreItem";
-import music from "../data/StoreMusic.json";
+import music from "../data/storeMusic.json";
 import Image from "next/image";
 
 export default function Store() {
