@@ -7,7 +7,7 @@ export default function MusicCarousel({ tracks }) {
         {tracks.map((track, idx) => (
           <div
             key={idx}
-            className="min-w-[300px] bg-gray-900 rounded-lg shadow flex-shrink-0"
+            className="min-w-[300px] bg-gray-900 rounded-lg shadow flex-shrink-0 bg-gray-800 p-4 rounded-xl shadow-xl hover:shadow-red-700/50 transition duration-300 transform hover:-translate-y-1 border border-gray-700"
           >
             <Image
               src={track.cover}
