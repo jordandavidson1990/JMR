@@ -1,0 +1,59 @@
+{
+  "tracks": [
+    {
+      "title": "Album",
+      "cover": "/images/album-cover.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/album/james-michael-rodgers",
+      "price": 10
+    },
+    {
+      "title": "Closer to you",
+      "url": "/music/closer-to-you.mp3",
+      "cover": "/images/album-9.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.ffm.to/closertoyou",
+      "price": 1
+    },
+    {
+      "title": "Let me grow old",
+      "cover": "/images/album-8.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/let-me-grow-old",
+      "price": 1
+    },
+    {
+      "title": "Borderline",
+      "cover": "/images/album-10.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/borderline-2",
+      "price": 1
+    },
+    {
+      "title": "How can you leave?",
+      "cover": "/images/album-11.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/how-can-you-leave",
+      "price": 1
+    },
+    {
+      "title": "How can I ever return?",
+      "cover": "/images/album-12.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/how-can-i-ever-return-2",
+      "price": 1
+    },
+    {
+      "title": "Fear is just a curse",
+      "cover": "/images/album-13.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/fear-is-just-a-curse",
+      "price": 1
+    },
+    {
+      "title": "Found a reason",
+      "cover": "/images/album-14.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/found-a-reason-2",
+      "price": 1
+    },
+    {
+      "title": "Glory of music",
+      "cover": "/images/album-15.jpg",
+      "buyUrl": "https://jamesmichaelrodgers.bandcamp.com/track/glory-of-music",
+      "price": 1
+    }
+  ]
+}

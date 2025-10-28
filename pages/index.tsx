@@ -3,6 +3,7 @@ import HeroEditorial from "../components/HeroEditorial";
 import MusicCarousel from "../components/MusicCarousel";
 import FooterEditorial from "../components/FooterEditorial";
 import Head from "next/head";
+import musicData from "../data/music.json";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         ctaLink="/store"
         imgSrc="/images/james-portrait.jpeg"
       />
-      <MusicCarousel />
+      <MusicCarousel tracks={musicData.tracks} />
       <FooterEditorial />
     </div>
   );

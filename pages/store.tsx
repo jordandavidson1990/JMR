@@ -1,7 +1,7 @@
 import NavBarSticky from "../components/NavBarSticky";
 import FooterEditorial from "../components/FooterEditorial";
 import StoreItem from "../components/StoreItem";
-import music from "../data/music.json";
+import music from "../data/StoreMusic.json";
 import Image from "next/image";
 
 export default function Store() {
@@ -25,8 +25,9 @@ export default function Store() {
           </h1>
         </div>
       </section>
+
       <div className="max-w-6xl mx-auto py-12 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto space-x-6 pb-4">
           {music.tracks.map((track, idx) => (
             <StoreItem key={idx} {...track} />
           ))}
