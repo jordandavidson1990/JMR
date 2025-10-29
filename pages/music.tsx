@@ -5,6 +5,7 @@ import {
   NavBarSticky,
 } from "../components";
 import musicData from "../data/music.json";
+
 export default function Music() {
   return (
     <div className="bg-black text-white min-h-screen">
