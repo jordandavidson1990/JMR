@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import FooterEditorial from "../components/FooterEditorial";
-import NavBarSticky from "../components/NavBarSticky";
 import { tourDates } from "../data";
 import { groupDatesByMonth } from "../utils";
+import { FooterEditorial, NavBarSticky } from "../components";
 
 export default function Tour() {
   const groupedDates = groupDatesByMonth(tourDates);

@@ -8,13 +8,13 @@ type HeroEditorialProps = {
   imgSrc: string;
 };
 
-export default function HeroEditorial({
+export const HeroEditorial = ({
   heading,
   subheading,
   ctaText,
   ctaLink,
   imgSrc,
-}: HeroEditorialProps) {
+}: HeroEditorialProps) => {
   return (
     <section className="relative bg-black text-white h-[60vh] flex items-center justify-center overflow-hidden">
       <Image
@@ -40,4 +40,4 @@ export default function HeroEditorial({
       </div>
     </section>
   );
-}
+};

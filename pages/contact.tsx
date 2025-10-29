@@ -1,8 +1,6 @@
-import NavBarSticky from "../components/NavBarSticky";
-import FooterEditorial from "../components/FooterEditorial";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import { StatusMessage } from "../components/StatusMessage";
+import { FooterEditorial, NavBarSticky, StatusMessage } from "../components";
 
 export default function Contact() {
   const form = useRef(null);

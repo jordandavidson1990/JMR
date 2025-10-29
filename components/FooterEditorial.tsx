@@ -1,4 +1,4 @@
-const FooterEditorial = () => (
+export const FooterEditorial = () => (
   <footer className="bg-black text-gray-400 py-10 mt-16 border-t border-gray-800">
     <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
       <div className="flex flex-col items-center md:items-start space-y-1">
@@ -54,5 +54,3 @@ const FooterEditorial = () => (
     </div>
   </footer>
 );
-
-export default FooterEditorial;

@@ -1,6 +1,4 @@
-import NavBarSticky from "../components/NavBarSticky";
-import FooterEditorial from "../components/FooterEditorial";
-import StoreItem from "../components/StoreItem";
+import { FooterEditorial, NavBarSticky, StoreItem } from "../components";
 import music from "../data/storeMusic.json";
 import Image from "next/image";
 

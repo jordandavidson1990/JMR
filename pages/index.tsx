@@ -1,8 +1,9 @@
-import NavBarSticky from "../components/NavBarSticky";
-import HeroEditorial from "../components/HeroEditorial";
-import MusicCarousel from "../components/MusicCarousel";
-import FooterEditorial from "../components/FooterEditorial";
-import Head from "next/head";
+import {
+  FooterEditorial,
+  HeroEditorial,
+  MusicCarousel,
+  NavBarSticky,
+} from "../components";
 import musicData from "../data/music.json";
 
 export default function Home() {

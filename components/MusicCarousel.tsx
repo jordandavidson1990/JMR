@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { useRef } from "react";
-import { useTrackPlayback } from "../hooks";
 import { SimpleAudioPlayer } from "./SimpleAudioPlayer";
-export default function MusicCarousel({ tracks }) {
+
+export const MusicCarousel = ({ tracks }) => {
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold mb-8">Featured Music</h2>
@@ -23,17 +22,11 @@ export default function MusicCarousel({ tracks }) {
               <h3 className="text-lg font-bold text-white mb-2">
                 {track.title}
               </h3>
-              {track.url && (
-                <SimpleAudioPlayer url={track.url} />
-                // <audio controls className="w-full mt-2">
-                //   <source src={track.url} type="audio/mp3" />
-                //   Your browser does not support the audio element.
-                // </audio>
-              )}
+              {track.url && <SimpleAudioPlayer url={track.url} />}
             </div>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
