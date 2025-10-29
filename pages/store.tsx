@@ -21,7 +21,7 @@ export default function Store() {
             className="text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-300"
             style={{ lineHeight: "normal" }}
           >
-            Buy music
+            Store
           </h1>
         </div>
       </section>
