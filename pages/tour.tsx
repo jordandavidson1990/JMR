@@ -42,13 +42,12 @@ const Tour = () => {
                 {groupedDates[month].map((gig, index) => (
                   <div
                     key={index}
-                    className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition duration-200"
+                    className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition duration-200 cursor-pointer"
                   >
                     <div
                       className="flex items-center mb-2 sm:mb-0"
                       onClick={() => window.open(gig.link, "_blank")}
                     >
-                      <span className="text-xl mr-3">{gig.icon}</span>
                       <div>
                         <p className="text-lg font-semibold text-white">
                           {gig.event}
