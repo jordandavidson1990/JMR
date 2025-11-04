@@ -18,6 +18,7 @@ const Tour = () => {
           alt=""
           width={800}
           height={600}
+          priority={true}
         />
         <div className="relative z-10 text-center max-w-2xl mx-auto">
           <h1

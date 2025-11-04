@@ -3,6 +3,7 @@ import { Layout } from "../components";
 import "../styles/globals.css";
 import { useApp } from "../hooks";
 
+// It's best to place this declaration at the top of the file, just after the imports.
 declare global {
   interface Window {
     dataLayer: any[];

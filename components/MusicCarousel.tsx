@@ -14,7 +14,7 @@ export const MusicCarousel = ({ tracks }) => {
             <Image
               src={track.cover}
               alt={track.title}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-full h-auto object-cover rounded-t-lg"
               width={300}
               height={192}
             />

@@ -23,6 +23,7 @@ export const HeroEditorial = ({
         alt=""
         width={800}
         height={600}
+        priority={true}
       />
       <div className="relative z-10 text-center max-w-2xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
