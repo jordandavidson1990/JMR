@@ -2,8 +2,8 @@ import React from "react";
 import { Layout } from "../components";
 import "../styles/globals.css";
 import { useApp } from "../hooks";
+import Head from "next/head";
 
-// It's best to place this declaration at the top of the file, just after the imports.
 declare global {
   interface Window {
     dataLayer: any[];
@@ -16,6 +16,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <Layout title="James Michael Rodgers">
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-6604930058363222" />
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );
