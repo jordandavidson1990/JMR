@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { TourDate } from "../types";
+import { tourDates } from "../data";
 
 const FALLBACK_TOUR_DATES = tourDates;
 const CACHE_KEY = "airtableTourDatesCache";
@@ -7,12 +8,6 @@ const CACHE_EXPIRY_MS = 3600000;
 const AIRTABLE_PAT = process.env.NEXT_PUBLIC_AIRTABLE_PAT;
 const AIRTABLE_BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME;
-
-console.log("Airtable PAT:", AIRTABLE_PAT);
-console.log("Airtable Base ID:", AIRTABLE_BASE_ID);
-console.log("Airtable Table Name:", AIRTABLE_TABLE_NAME);
-
-import { tourDates } from "../data";
 
 export const useTour = () => {
   const [tourDates, setTourDates] = useState<TourDate[]>([]);
