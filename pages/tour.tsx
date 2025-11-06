@@ -9,8 +9,6 @@ const Tour = () => {
   const groupedDates = groupDatesByMonth(tourDates);
   const months = Object.keys(groupedDates);
 
-  console.log({ tourDates, isLoading, error });
-
   return (
     <div className="bg-black text-white min-h-screen font-sans">
       <NavBarSticky />

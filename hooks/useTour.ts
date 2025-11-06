@@ -4,12 +4,10 @@ import { TourDate } from "../types";
 const FALLBACK_TOUR_DATES = tourDates;
 const CACHE_KEY = "airtableTourDatesCache";
 const CACHE_EXPIRY_MS = 3600000;
+const AIRTABLE_PAT = process.env.NEXT_PUBLIC_AIRTABLE_PAT;
+const AIRTABLE_BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID;
+const AIRTABLE_TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME;
 
-import {
-  AIRTABLE_BASE_ID,
-  AIRTABLE_PAT,
-  AIRTABLE_TABLE_NAME,
-} from "../constants";
 import { tourDates } from "../data";
 
 export const useTour = () => {
@@ -44,7 +42,7 @@ export const useTour = () => {
       try {
         const response = await fetch(apiUrl, {
           headers: {
-            Authorization: `Bearer ${AIRTABLE_PAT}`,
+            Authorization: `Bearer ${process.env.AIRTABLE_PAT}`,
             "Content-Type": "application/json",
           },
         });
@@ -56,8 +54,6 @@ export const useTour = () => {
         }
 
         const data = await response.json();
-
-        console.log("Fetched tour dates from Airtable:", data);
 
         const liveDates: TourDate[] = data.records
           .map((record: any) => ({
@@ -125,12 +121,6 @@ export const useTour = () => {
           setTourDates(data);
           setIsLoading(false);
           cacheHit = true;
-
-          if (isExpired) {
-            console.log("Cache expired. Fetching fresh data in background.");
-          } else {
-            return;
-          }
         }
       }
     } catch (e) {
