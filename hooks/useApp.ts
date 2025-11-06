@@ -5,6 +5,7 @@ import { GA_TRACKING_ID } from "../constants";
 
 export const useApp = () => {
   const router = useRouter();
+  const url = router.asPath;
 
   useEffect(() => {
     initializeAnalytics();
@@ -19,4 +20,9 @@ export const useApp = () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  const initialTitle = url.replace("/", "") || "Home";
+  const title = initialTitle.charAt(0).toUpperCase() + initialTitle.slice(1);
+
+  return { title };
 };

@@ -13,10 +13,10 @@ declare global {
 }
 
 export default function App({ Component, pageProps }) {
-  useApp();
+  const { title } = useApp();
 
   return (
-    <Layout title="James Michael Rodgers">
+    <Layout title={`James Michael Rodgers | ${title}`}>
       <Head>
         <meta name="google-adsense-account" content="ca-pub-6604930058363222" />
       </Head>
