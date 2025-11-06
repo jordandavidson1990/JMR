@@ -26,7 +26,7 @@ export default function Store() {
       </section>
 
       <div className="max-w-6xl mx-auto py-12 px-4">
-        <div className="flex overflow-x-auto space-x-6 pb-4">
+        <div className="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory hide-scrollbar">
           {music.tracks.map((track, idx) => (
             <StoreItem key={idx} {...track} />
           ))}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const StoreItem = ({ title, cover, buyUrl, price }) => {
   return (
-    <div className="min-w-[300px] bg-gray-800 p-4 rounded-xl shadow-xl hover:shadow-red-700/50 transition duration-300 transform hover:-translate-y-1 border border-gray-700 w-64">
+    <div className="min-w-[300px] bg-gray-800 p-4 rounded-xl shadow-xl hover:shadow-red-700/50 transition duration-300 transform hover:-translate-y-1 border border-gray-700 w-64 flex-shrink-0 snap-center">
       <Image
         src={cover}
         alt=""
