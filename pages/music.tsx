@@ -17,7 +17,7 @@ export default function Music() {
         imgSrc="/images/album-7.jpg"
       />
 
-      <div className="max-w-6xl mx-auto py-12 px-4">
+      <div className="max-w-6xl mx-auto py-12">
         <MusicCarousel tracks={musicData.tracks} />
       </div>
       <FooterEditorial />
