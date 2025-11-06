@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { SimpleAudioPlayer } from "./SimpleAudioPlayer";
+import { Track } from "../types";
 
-export const MusicCarousel = ({ tracks }) => {
+export const MusicCarousel = ({ tracks }: { tracks: Track[] }) => {
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold mb-8">Featured Music</h2>
@@ -22,7 +23,17 @@ export const MusicCarousel = ({ tracks }) => {
               <h3 className="text-lg font-bold text-white mb-2">
                 {track.title}
               </h3>
-              {track.url && <SimpleAudioPlayer url={track.url} />}
+              {track.url && track.buyUrl && (
+                <SimpleAudioPlayer url={track.url} />
+              )}
+              {!track.buyUrl && (
+                <p
+                  className="text-sm font-extrabold text-red-300  tracking-widest py-2 rounded-md shadow-xl transition duration-500 animate-slow-pulse"
+                  style={{ textShadow: "0 0 8px rgba(252, 165, 165, 0.7)" }}
+                >
+                  Coming soon
+                </p>
+              )}
             </div>
           </div>
         ))}

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { initializeAnalytics } from "../utils";
+import { initializeAdNetwork, initializeAnalytics } from "../utils";
 import { GA_TRACKING_ID } from "../constants";
 
 export const useApp = () => {
@@ -8,6 +8,7 @@ export const useApp = () => {
 
   useEffect(() => {
     initializeAnalytics();
+    // initializeAdNetwork();
 
     const handleRouteChange = (url) => {
       window.gtag("config", GA_TRACKING_ID, { page_path: url });
