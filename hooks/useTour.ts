@@ -8,6 +8,10 @@ const AIRTABLE_PAT = process.env.NEXT_PUBLIC_AIRTABLE_PAT;
 const AIRTABLE_BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME;
 
+console.log("Airtable PAT:", AIRTABLE_PAT);
+console.log("Airtable Base ID:", AIRTABLE_BASE_ID);
+console.log("Airtable Table Name:", AIRTABLE_TABLE_NAME);
+
 import { tourDates } from "../data";
 
 export const useTour = () => {
@@ -42,7 +46,7 @@ export const useTour = () => {
       try {
         const response = await fetch(apiUrl, {
           headers: {
-            Authorization: `Bearer ${process.env.AIRTABLE_PAT}`,
+            Authorization: `Bearer ${AIRTABLE_PAT}`,
             "Content-Type": "application/json",
           },
         });
@@ -80,8 +84,6 @@ export const useTour = () => {
           const delay = Math.pow(2, attempt) * 1000;
           await new Promise((resolve) => setTimeout(resolve, delay));
         } else {
-          // Final attempt failed
-          // Only show error if no data (cached or otherwise) is present
           if (tourDates.length === 0) {
             setTourDates(FALLBACK_TOUR_DATES);
           }
@@ -121,6 +123,12 @@ export const useTour = () => {
           setTourDates(data);
           setIsLoading(false);
           cacheHit = true;
+
+          if (isExpired) {
+            console.log("Cache expired. Fetching fresh data in background.");
+          } else {
+            return;
+          }
         }
       }
     } catch (e) {
