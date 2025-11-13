@@ -4,7 +4,7 @@ import { tourDates } from "../data";
 
 const FALLBACK_TOUR_DATES = tourDates;
 const CACHE_KEY = "airtableTourDatesCache";
-const CACHE_EXPIRY_MS = 3600000;
+const CACHE_EXPIRY_MS = 600000;
 const AIRTABLE_PAT = process.env.NEXT_PUBLIC_AIRTABLE_PAT;
 const AIRTABLE_BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME;
@@ -120,6 +120,7 @@ export const useTour = () => {
           cacheHit = true;
 
           if (isExpired) {
+            localStorage.removeItem(CACHE_KEY);
             console.log("Cache expired. Fetching fresh data in background.");
           } else {
             return;
@@ -127,6 +128,7 @@ export const useTour = () => {
         }
       }
     } catch (e) {
+      localStorage.removeItem(CACHE_KEY);
       console.error("Error reading/parsing cache:", e);
     }
 
