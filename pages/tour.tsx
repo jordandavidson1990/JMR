@@ -81,8 +81,16 @@ const Tour = () => {
                     {groupedDates[month].map((gig, index) => (
                       <div
                         key={index}
-                        className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-xl bg-gray-800 hover:bg-red-900/20 transition duration-200 cursor-pointer border-l-4 border-red-600 shadow-md"
-                        onClick={() => window.open(gig.link, "_blank")}
+                        className={`relative flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-xl bg-gray-800 transition duration-200 border-l-4 border-red-600 shadow-md group 
+                    /* Apply hover only if there is a link, otherwise apply different hover style */
+                    ${
+                      gig.link
+                        ? "cursor-pointer hover:bg-red-900/20"
+                        : "cursor-default hover:bg-gray-700/50"
+                    }`}
+                        onClick={() =>
+                          gig.link ? window.open(gig.link, "_blank") : null
+                        }
                       >
                         <div className="flex items-center mb-2 sm:mb-0">
                           <div>
@@ -92,9 +100,13 @@ const Tour = () => {
                             <p className="text-sm text-gray-400">
                               {gig.location}
                             </p>
+                            {!gig.link && (
+                              <p className="text-sm text-gray-400 italic">
+                                Tickets on the door
+                              </p>
+                            )}
                           </div>
                         </div>
-                        {/* Date is styled to look like a prominent tag */}
                         <p className="text-md font-extrabold px-3 py-1 bg-red-600 text-white rounded-full sm:text-right shadow-lg">
                           {gig.date}
                         </p>
